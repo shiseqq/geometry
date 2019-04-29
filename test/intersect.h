@@ -1,6 +1,5 @@
 #include "../src/intersect.hpp"
 #include <cxxtest/TestSuite.h>
-#include <iostream>
 
 class intesection_test : public CxxTest::TestSuite {
 public:
