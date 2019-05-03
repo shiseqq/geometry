@@ -26,10 +26,5 @@ test : $(TEST_SOURCES) $(TEST_EXECUTABLE)
 $(TEST_EXECUTABLE) : $(TEST_OBJECTS)
 	$(CC) $^ -o $@
 
-build/%_test.o : src/%.cpp
-	$(CC) $(CFLAGS) $< -o $@
-
 build/%.o : test/%.cpp
 	$(CC) $(CFLAGS) $< -o $@
-
-include $(wildcard $(addprefix build/, *.d))
