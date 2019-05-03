@@ -68,17 +68,17 @@ public:
 static intesection_test suite_intesection_test;
 
 static CxxTest::List Tests_intesection_test = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_intesection_test( "test/intersect.h", 5, "intesection_test", suite_intesection_test, Tests_intesection_test );
+CxxTest::StaticSuiteDescription suiteDescription_intesection_test( "test/intersect.h", 4, "intesection_test", suite_intesection_test, Tests_intesection_test );
 
 static class TestDescription_suite_intesection_test_test_intersection_triangles1 : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_intesection_test_test_intersection_triangles1() : CxxTest::RealTestDescription( Tests_intesection_test, suiteDescription_intesection_test, 7, "test_intersection_triangles1" ) {}
+ TestDescription_suite_intesection_test_test_intersection_triangles1() : CxxTest::RealTestDescription( Tests_intesection_test, suiteDescription_intesection_test, 6, "test_intersection_triangles1" ) {}
  void runTest() { suite_intesection_test.test_intersection_triangles1(); }
 } testDescription_suite_intesection_test_test_intersection_triangles1;
 
 static class TestDescription_suite_intesection_test_test_intersection_triangles2 : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_intesection_test_test_intersection_triangles2() : CxxTest::RealTestDescription( Tests_intesection_test, suiteDescription_intesection_test, 11, "test_intersection_triangles2" ) {}
+ TestDescription_suite_intesection_test_test_intersection_triangles2() : CxxTest::RealTestDescription( Tests_intesection_test, suiteDescription_intesection_test, 10, "test_intersection_triangles2" ) {}
  void runTest() { suite_intesection_test.test_intersection_triangles2(); }
 } testDescription_suite_intesection_test_test_intersection_triangles2;
 

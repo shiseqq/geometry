@@ -3,10 +3,9 @@ CFLAGS=-c -Wall -Werror -std=c++11
 SOURCES=src/geometry.cpp src/cti.cpp src/intersect.cpp
 OBJECTS=$(SOURCES:src/*.cpp=build/*.o)
 EXECUTABLE=bin/geometry.exe
-TEST_SOURCES = $(wildcard $(addprefix test/, *.cpp))
-TEST_OBJECTS = $(patsubst $(addprefix test/, %.h),$(addprefix build/, %.o),$(wildcard $(addprefix test/, *.h))) $(patsubst $(addprefix test/, %.cpp),$(addprefix build/, %.o),$(wildcard $(addprefix test/, *.cpp)))
+TEST_SOURCES=test/test.cpp
+TEST_OBJECTS=build/intersect.o build/cti.o build/test.o
 TEST_EXECUTABLE = bin/test.out
-
 
 all: $(SOURCES) $(EXECUTABLE)
 
