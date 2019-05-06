@@ -20,7 +20,7 @@ clean:
 	rm -rf build/*.o bin/*.exe bin/*.out
 
 .PHONY : test
-test : $(TEST_SOURCES) $(TEST_EXECUTABLE)
+test : $(TEST_EXECUTABLE) $(TEST_OBJECTS)
 	$(TEST_EXECUTABLE)
 
 $(TEST_EXECUTABLE) : $(TEST_OBJECTS)

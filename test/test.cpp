@@ -20,7 +20,7 @@ int main( int argc, char *argv[] ) {
     return status;
 }
 bool suite_MyTest_init = false;
-#include "/home/shise/myProj/geometry/test/cti.h"
+#include "cti.h"
 
 static MyTest suite_MyTest;
 
@@ -63,7 +63,7 @@ public:
  void runTest() { suite_MyTest.testMethod(); }
 } testDescription_suite_MyTest_testMethod;
 
-#include "/home/shise/myProj/geometry/test/intersect.h"
+#include "intersect.h"
 
 static intesection_test suite_intesection_test;
 
